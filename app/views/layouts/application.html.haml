@@ -1,0 +1,16 @@
+!!!html5
+/[if IE]
+  <html class="ie" lang="en">
+%html{lang: "en"}
+  %head
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application'
+
+  %body.v5
+    %header
+      = render "layouts/header"
+    - if content_for?(:context)
+      = yield(:context)
+    %section.content
+      = content_for?(:content) ? yield(:content) : yield
+    = render partial: 'layouts/footer'

@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'home#index'
 
+  resources :messages, only: [:new, :create]
+  get 'contact', to: 'messages#new', as: 'contact'
+  post 'contact', to: 'messages#create'
+  # get '/contact', :to => new_message_path
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

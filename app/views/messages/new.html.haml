@@ -1,0 +1,26 @@
+
+- content_for :context do
+  / .project-nav
+  /   %h1 
+  /     Contact Me
+
+= form_for @message do |f|
+  - if @message.errors.any?
+    #error_explanation
+      %h2
+        = "#{pluralize(@message.errors.count, "error")} prohibited this message from being sent:"
+      %ul
+        - @message.errors.full_messages.each do |msg|
+          %li= msg
+        %ul
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :email
+    = f.email_field :email
+  .field.content
+    = f.label :message
+    = f.text_area :content
+  .actions
+    = f.submit 'Send', class: 'button'
