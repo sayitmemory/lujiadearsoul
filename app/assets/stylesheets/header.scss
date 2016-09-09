@@ -122,13 +122,12 @@ h6 {
 
 p {
   display: block;
-  margin-top: 30px;
-  margin-bottom: 16px;
+  margin: 20px;
   font-family: Lato, sans-serif;
   color: 080706;
   line-height: 24px;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 17px;
   letter-spacing: 0.5px;
 }
 
@@ -145,7 +144,7 @@ a:hover {
 .hero {
   background-position: 0px 0px, 38% 50%;
   background-size: auto, 650px;
-  background-repeat: repeat, no-repeat;
+  background-image: url(img2.jpg);
 }
 
 .hero.small {

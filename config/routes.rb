@@ -8,6 +8,11 @@ Rails.application.routes.draw do
   resources :messages, only: [:new, :create]
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'
+
+  get '/about' => 'pages#about'
+  get '/skills' => 'pages#skills'
+  get '/profile' => 'pages#profile'
+  get '/resume' => 'pages#resume'
   # get '/contact', :to => new_message_path
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
