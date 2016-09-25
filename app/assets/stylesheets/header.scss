@@ -312,9 +312,8 @@ a:hover {
 }
 
 .footer {
-  margin-top: 29px;
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #222;
   color: #999;
   font-size: 12px;
@@ -360,7 +359,6 @@ a:hover {
 }
 
 .main-heading {
-  margin-bottom: 26px;
   color: #080706;
   font-size: 45px;
   line-height: 53px;
@@ -369,12 +367,19 @@ a:hover {
 }
 
 .sub-heading {
-  margin: 30px;
+  margin: 10px;
   color: #080706;
-  font-size: 27px;
-  line-height: 53px;
+  font-size: 22px;
   font-weight: 300;
   text-align: center;
+}
+
+span#cursor {
+  display: inline-block;
+  font-size: 38px;
+  line-height: 43px;
+  from { visibility: visible }
+  to { visibility: hidden }
 }
 
 .container {
@@ -402,11 +407,10 @@ a:hover {
 }
 
 .footer-logo {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-family: Lato, sans-serif;
   color: #c2c2c2;
   font-size: 19px;
-  line-height: 22px;
   text-transform: uppercase;
 }
 
